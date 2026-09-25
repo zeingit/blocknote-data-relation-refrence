@@ -1,48 +1,38 @@
 # CURRENT_TASK.md
 
+## Project Goal Context
+
+Repo ini adalah **reference model sistem & alur** untuk:
+- **Editor mode** — penulisan, pencatatan, authoring
+- **Preview mode** — reading-only view dari content yang sama
+
+Tujuan: developer bisa clone, dapat sistem text editor lengkap, tinggal kustomisasi desain.
+
 ## Current Task
 
 Setup dokumentasi project.
 
 ## Current Status
 
-COMPLETE — semua file dokumentasi sudah dibuat.
-
-## Current Problem
-
-Project baru diinisialisasi, belum ada dokumentasi.
-
-## Goal
-
-Buat sistem dokumentasi lengkap untuk project ini.
+COMPLETE — semua file dokumentasi sudah dibuat. Sekarang perlu inject project goal context ke semua file.
 
 ## Confirmed Facts
 
-- Repo ini adalah referensi konsep editor & publish berbasis BlockNote.
-- Folder `blocknote/` berisi shallow clone BlockNote (tanpa history).
-- Folder `canvas/` dan `timelines/` masih kosong.
-- Tech stack utama: TypeScript, pnpm, Vite, React, prosemirror/tiptap.
-
-## Current Hypothesis
-
-N/A
-
-## Failed Approaches
-
-N/A
+- Repo ini reference sistem & alur, BUKAN reference desain.
+- Editor mode + preview mode adalah use case utama.
+- Target: AI agent / developer yang butuh sistem data relation atau database management.
+- Folder `blocknote/` = shallow clone BlockNote (reference implementasi).
+- Folder `canvas/` dan `timelines/` = placeholder untuk ekspansi project ini sendiri.
 
 ## Last Action
 
-Membuat CLAUDE.md dan AGENTS.md.
-
-## Current State
-
-Sedang membuat CURRENT_TASK.md, lalu DEBUG_LOG.md, lalu /docs.
+Menambahkan Project Purpose ke CLAUDE.md dan aturan project goal ke AGENTS.md.
 
 ## Next Step
 
-Buat DEBUG_LOG.md dan /docs (STRUCTURE, ARCHITECTURE, CONVENTIONS, DECISIONS, CHANGELOG).
+Update CURRENT_TASK.md ini sendiri dengan context yang sudah lengkap, lalu update DEBUG_LOG.md dengan goal discovery ini.
 
 ## Things That Must Not Be Repeated
 
-N/A
+- Menambahkan sesuatu yang hanya relevan untuk desain, bukan sistem & alur.
+- Membuat keputusan tanpa mempertimbangankan apakah itu membantu repo sebagai reference model.

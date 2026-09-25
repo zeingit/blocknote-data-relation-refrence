@@ -2,6 +2,12 @@
 
 Rules for AI working on this project.
 
+## Project Goal
+
+Setiap keputusan harus melewati pertimbangan: apakah ini mendukung tujuan repo sebagai **reference model sistem & alur** untuk editor mode + preview mode?
+
+Jika tidak relevan dengan itu, question the work — apakah perlu ada di repo ini atau di sub-project masing-masing?
+
 ## Core Rules
 
 - Never make unsupported success claims.

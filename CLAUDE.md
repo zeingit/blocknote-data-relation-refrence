@@ -2,6 +2,15 @@
 
 Repo referensi konsep editor dan publish berbasis BlockNote.
 
+## Project Purpose
+
+Project ini adalah **resource sistem dan alur** (bukan referensi desain) untuk developer yang mau bikin website atau aplikasi yang butuh:
+
+- **Editor mode** — penulisan, pencatatan, authoring
+- **Preview mode** — reading-only view dari content yang sama
+
+Dengan mengclone repo ini, AI agent yang butuh sistem data relation atau database management langsung punya reference model. Developer bisa menyesuaikan desain sesuai selera masing-masing, tapi sistem dan alur text editor tetap sama sehingga lancar.
+
 ## Project Structure
 
 ```

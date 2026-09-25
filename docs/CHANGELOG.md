@@ -2,6 +2,12 @@
 
 ## 2026-09-26
 
+### Updated
+
+- `CLAUDE.md` — tambahkan Project Purpose (editor mode + preview mode, reference sistem & alur bukan desain)
+- `AGENTS.md` — tambahkan aturan: setiap keputusan harus melewati pertimbangan project goal
+- `CURRENT_TASK.md` — inject project goal context
+
 ### Added
 
 - `CLAUDE.md` — tech stack, install, run, build, test, project rules
@@ -14,3 +20,4 @@
 - `/docs/DECISIONS.md` — architecture decision records
 - `/docs/CHANGELOG.md` — this file
 - `blocknote/` — shallow clone BlockNote repo (4427 files, no history)
+
