@@ -23,8 +23,19 @@ blocknote-data-relation-refrence/
 │   ├── shared/         # Shared utilities
 │   ├── pnpm-workspace.yaml
 │   └── CLAUDE.md       # BlockNote internal docs
-├── canvas/             # Placeholder project canvas
-└── timelines/          # Placeholder project timelines
+├── timelines/          # Timelines Studio (shallow clone)
+│   ├── src/
+│   │   ├── components/   # React components
+│   │   ├── utils/        # Utility functions
+│   │   ├── hooks/        # React hooks
+│   │   ├── styles/       # CSS files
+│   │   ├── config/       # Themes, icons
+│   │   ├── viewer/       # Web viewer (baca-only)
+│   │   └── App.jsx       # Main app
+│   ├── electron/         # Electron main process
+│   ├── test/             # Tests
+│   └── docs/             # Docs
+└── canvas/             # Placeholder project canvas
 ```
 
 ## BlockNote Package Structure

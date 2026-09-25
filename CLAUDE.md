@@ -16,7 +16,7 @@ Dengan mengclone repo ini, AI agent yang butuh sistem data relation atau databas
 ```
 blocknote/       BlockNote (shallow clone) — block-based rich text editor
 canvas/          Placeholder untuk project canvas
-timelines/       Placeholder untuk project timelines
+timelines/       Timelines Studio (shallow clone) — interactive timeline editor
 ```
 
 ## BlockNote (bagian utama)

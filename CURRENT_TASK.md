@@ -22,7 +22,7 @@ COMPLETE — semua file dokumentasi sudah dibuat. Sekarang perlu inject project 
 - Editor mode + preview mode adalah use case utama.
 - Target: AI agent / developer yang butuh sistem data relation atau database management.
 - Folder `blocknote/` = shallow clone BlockNote (reference implementasi).
-- Folder `canvas/` dan `timelines/` = placeholder untuk ekspansi project ini sendiri.
+- Folder `timelines/` = shallow clone Timelines Studio (interactive timeline editor)
 
 ## Last Action
 
