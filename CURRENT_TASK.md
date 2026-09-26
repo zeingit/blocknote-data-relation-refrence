@@ -1,41 +1,46 @@
 # CURRENT_TASK.md
 
-## Current Task
-Setup and maintain core documentation and system architecture for the React + Appwrite Cloud reference model.
-
-## Current Status
-Documentation files (CLAUDE.md, AGENTS.md, CURRENT_TASK.md, DEBUG_LOG.md, and docs/*) are created. Reviewing and updating them to align with the new requirements.
-
 ## Current Problem
-Need to ensure all documentation perfectly reflects the specific user rules requested (like Appwrite Cloud schema tracking) and accurately captures the current task state.
+We need to modify the newly cloned BlockNote reference implementation for the canvas mindmap and "ll", but we haven't started this process yet. The session was stopped right after cloning and setting up the runner script.
 
 ## Goal
-To have a robust documentation foundation that AI agents can strictly follow, acting as a reference model for editor & preview modes with Appwrite integration.
+Modify the local BlockNote implementation for integration into the canvas mindmap as a rich text editor and other future features.
 
 ## Confirmed Facts
-- Repo ini reference sistem & alur, BUKAN reference desain.
-- Target: AI agent / developer yang butuh sistem data relation atau database management.
-- Tech Stack: React + Appwrite Cloud.
-- Folder `blocknote/` = shallow clone BlockNote (reference implementasi).
-- Folder `timelines/` = shallow clone Timelines Studio (interactive timeline editor).
-- `appwrite.json` is used for storing the database schema.
+- Canvas Phase 1-3 is complete (Split-view, CRUD nodes, React Flow handles, LocalStorage auto-save).
+- Appwrite schema is not yet defined (`appwrite.json` is missing/empty). No Appwrite config touched yet.
+- BlockNote repository is cloned (shallow clone, `--depth 1`) in the `blocknote/` folder.
+- A double-clickable `run-blocknote.command` exists to run it independently on macOS.
+- Root `package.json` has an `npm run blocknote` shortcut.
 
 ## Current Hypothesis
-Updating all documentation strictly according to the user's prompt will provide a clean slate for future AI interactions without breaking existing reference implementation details.
+Modifying the local shallow clone of BlockNote directly will allow us to customize the rich text editor to fit exactly into the mindmap nodes' requirements without breaking the core canvas logic.
 
-## Failed Approaches
-None in this specific documentation setup phase. (Historical git clone failures are logged in DEBUG_LOG.md).
+## All Failed Approaches
+- Using Vite interactive prompt (hung).
+- Configuring Tailwind v4 with v3 PostCSS syntax (caused Vite error).
+- Relying on default React Flow `Handle` configs without explicit `id`s (caused connections to drop).
+- Full git clone of BlockNote (too slow, replaced with shallow clone).
+- Providing a `.sh` file for macOS shortcut (user wanted double-clickable `.command`).
+
+## Evidence Discovered
+- Tailwind v4 requires `@tailwindcss/vite` plugin rather than traditional PostCSS plugins.
+- React Flow's `Handle` components in custom nodes often require explicit `id` and `isConnectable={true}` props to avoid dropping connections silently.
+- macOS `.command` files require `cd "$(dirname "$0")"` to execute in the correct directory when double-clicked.
 
 ## Last Action
-Updated AGENTS.md with the CRITICAL APPWRITE RULE and modified CLAUDE.md to include React + Appwrite Cloud in the tech stack.
+Cloned BlockNote, created `run-blocknote.command`, updated `package.json` scripts, and stopped the session before starting BlockNote modifications.
 
 ## Current State
-Documentation is almost fully aligned. We are finalizing the CURRENT_TASK.md structure.
+Session paused. Development environment for both Canvas and BlockNote is fully set up and running, but BlockNote modifications are pending.
 
-## Next Step
-Confirm the setup is complete and report back to the user that the environment is refreshed and ready.
+## Exact Next Step
+Begin modifying the BlockNote source code located in the `blocknote/` folder according to the upcoming user requirements.
 
 ## Things That Must Not Be Repeated
-- Making unverified success claims.
+- Using `.sh` instead of `.command` for Mac executable desktop shortcuts.
+- Attempting full clones for large reference repos without using `--depth 1`.
+- Forgetting explicit `id` and `isConnectable` for React Flow Handles.
+- Mixing Tailwind v3 configs in a Tailwind v4 project.
 - Proceeding with DB changes without recording the schema via Appwrite CLI.
-- Adding details only relevant for design rather than system/flow.
+- Making unverified success claims.
