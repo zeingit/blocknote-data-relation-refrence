@@ -23,16 +23,18 @@ timelines/       Timelines Studio (shallow clone) — interactive timeline edito
 
 BlockNote adalah block-based rich text editor dengan tech stack:
 
+- **Tech Stack:** React + Appwrite Cloud
 - **Runtime:** Node.js
 - **Package Manager:** pnpm
 - **Build:** Vite
 - **Language:** TypeScript
 - **Editor Core:** prosemirror + @tiptap/pm
 - **UI Framework:** React (packages/react), Mantine (packages/mantine)
+- **Database / Backend:** Appwrite Cloud
 - **Testing:** vitest (unit), Playwright (e2e)
 - **Documentation:** fumadocs
 
-### Commands (jalankan dari folder `blocknote/`)
+### Commands (jalankan dari folder `blocknote/` atau root sesuai kebutuhan)
 
 | Command | Description |
 |---------|-------------|

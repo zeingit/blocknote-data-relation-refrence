@@ -16,6 +16,7 @@ Jika tidak relevan dengan itu, question the work — apakah perlu ada di repo in
 - Verify every fix.
 - Never repeat a failed approach unless new evidence justifies it.
 - Never invent missing information.
+- CRITICAL APPWRITE RULE: Every time you create a new database collection or attribute for this application, you MUST save its schema into the `appwrite.json` file using the Appwrite CLI. Ensure the entire database structure is recorded there so it can be automatically redeployed to another server.
 
 ## Debugging Protocol
 
